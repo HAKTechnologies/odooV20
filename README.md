@@ -40,7 +40,7 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 sudo npm install -g less less-plugin-clean-css
 
 
-5. Install PostgreSQL
+**5. Install PostgreSQL**
 sudo apt-get install -y postgresql postgresql-client
 
 sudo su - postgres
@@ -50,11 +50,11 @@ createuser --createdb --username postgres --no-createrole --superuser --pwprompt
 exit
 
 
-6. Create Odoo System User
+**6. Create Odoo System User**
 sudo adduser --system --home=/opt/odoo20 --group odoo20
 
 
-7. Download Odoo 20 from GitHub
+**7. Download Odoo 20 from GitHub**
 sudo apt-get install -y git
 
 sudo su - odoo20 -s /bin/bash
@@ -68,7 +68,7 @@ ls
 exit
 
 
-8. Create Python Virtual Environment
+**8. Create Python Virtual Environment**
 sudo apt install -y python3-venv
 
 sudo python3 -m venv /opt/odoo20/venv
@@ -87,7 +87,7 @@ deactivate
 
 exit
 
-9. Install wkhtmltopdf
+**9. Install wkhtmltopdf**
 sudo wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.6.1/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
 
 sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
@@ -97,7 +97,7 @@ sudo apt install -f
 wkhtmltopdf --version
 
 
-10. Configure Odoo
+**10. Configure Odoo**
 sudo cp /opt/odoo20/debian/odoo.conf /etc/odoo20.conf
 
 sudo nano /etc/odoo20.conf
@@ -115,7 +115,7 @@ logfile = /var/log/odoo/odoo20.log
 
 
 
-11. Set Permissions
+**11. Set Permissions**
 sudo chown odoo20: /etc/odoo20.conf
 
 sudo chmod 640 /etc/odoo20.conf
@@ -125,7 +125,7 @@ sudo mkdir -p /var/log/odoo
 sudo chown odoo20:root /var/log/odoo
 
 
-12. Create Odoo Systemd Service
+**12. Create Odoo Systemd Service**
 sudo nano /etc/systemd/system/odoo20.service
 
 Add:
@@ -144,7 +144,7 @@ ExecStart=/opt/odoo20/venv/bin/python3 /opt/odoo20/odoo-bin -c /etc/odoo20.conf
 WantedBy=multi-user.target
 
 
-13. Start Odoo Service
+**13. Start Odoo Service**
 sudo systemctl daemon-reload
 
 sudo systemctl start odoo20
@@ -154,14 +154,14 @@ sudo systemctl enable odoo20
 sudo systemctl status odoo20
 
 
-14. Access Odoo
+**14. Access Odoo**
 
 Open your browser:
 
 http://your_server_ip:8069
 
 
-15. Check Odoo Logs
+**15. Check Odoo Logs**
 sudo tail -f /var/log/odoo/odoo20.log
 
 Or:
