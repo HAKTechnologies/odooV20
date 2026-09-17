@@ -105,12 +105,12 @@ sudo nano /etc/odoo20.conf
 Add:
 
 [options]
-admin_passwd = your_admin_password
+admin_passwd = my_admin_password
 db_host = localhost
 db_port = 5432
 db_user = odoo20
-db_password = your_database_password
-addons_path = /opt/odoo20/addons
+db_password = 123
+addons_path = /opt/odoo20/addmuons
 logfile = /var/log/odoo/odoo20.log
 
 
