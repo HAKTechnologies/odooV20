@@ -2,7 +2,7 @@
 
 Complete command reference for installing **Odoo 20 Community Edition** on an Ubuntu 24.04 LTS server.
 
-## 1. Login to Ubuntu Server
+**1. Login to Ubuntu Server**
 
 ```bash
 ssh username@server_ip
@@ -15,7 +15,7 @@ lsb_release -a
 sudo apt-get update
 sudo apt-get upgrade -y
 
-3. Secure Server
+**3. Secure Server**
 sudo apt-get install -y openssh-server
 sudo apt-get install -y fail2ban
 
@@ -24,7 +24,7 @@ sudo systemctl enable fail2ban
 sudo systemctl status fail2ban
 
 
-4. Install Required Packages
+**4. Install Required Packages**
 sudo apt-get install -y python3-pip python3-venv python3-dev \
 git build-essential libxml2-dev libxslt1-dev zlib1g-dev \
 libsasl2-dev libldap2-dev libssl-dev libffi-dev \
