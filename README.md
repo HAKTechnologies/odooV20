@@ -88,9 +88,9 @@ deactivate
 exit
 
 **9. Install wkhtmltopdf**
-sudo wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.6.1/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+sudo wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.focal_amd64.deb
 
-sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+sudo apt install ./wkhtmltox_0.12.5-1.focal_amd64.deb
 
 sudo apt install -f
 
