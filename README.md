@@ -41,7 +41,7 @@ sudo apt-get install -y postgresql postgresql-client
 
 sudo su - postgres
 
-createuser --createdb --username postgres --no-createrole --superuser --pwprompt odoo20
+createuser --createdb --username postgres --no-createrole --superuser
 
 exit
 
@@ -105,7 +105,7 @@ admin_passwd = my_admin_password
 db_host = localhost
 db_port = 5432
 db_user = odoo20
-db_password = 123
+db_password = False
 addons_path = /opt/odoo20/addons
 logfile = /var/log/odoo/odoo20.log
 
