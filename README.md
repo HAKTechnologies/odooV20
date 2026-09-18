@@ -106,7 +106,7 @@ db_host = localhost
 db_port = 5432
 db_user = odoo20
 db_password = 123
-addons_path = /opt/odoo20/addmuons
+addons_path = /opt/odoo20/addons
 logfile = /var/log/odoo/odoo20.log
 
 
