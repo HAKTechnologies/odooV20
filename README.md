@@ -25,11 +25,7 @@ sudo systemctl status fail2ban
 
 
 **4. Install Required Packages**
-sudo apt-get install -y python3-pip python3-venv python3-dev \
-git build-essential libxml2-dev libxslt1-dev zlib1g-dev \
-libsasl2-dev libldap2-dev libssl-dev libffi-dev \
-libjpeg-dev libpq-dev liblcms2-dev libblas-dev \
-libatlas-base-dev npm node-less
+sudo apt-get install -y python3-pip python3-venv python3-dev git build-essential libxml2-dev libxslt1-dev zlib1g-dev libsasl2-dev libldap2-dev libssl-dev libffi-dev libjpeg-dev libpq-dev liblcms2-dev libblas-dev libatlas-base-dev npm node-less
 
 sudo apt-get install -y nodejs
 
